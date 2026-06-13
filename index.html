@@ -3,12 +3,467 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice</title>
-
-    <h1>Hello, World!</h1>
-
+    <title>節約してみたくなるかも？</title>
+    <!-- font：Interの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Bubblegum+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&family=Yomogi&family=Yusei+Magic&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font：Zen Maru Gothicの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Bubblegum+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&family=Yomogi&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font：Quicksandの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Bubblegum+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Yomogi&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font：roboto Mediumの読み込み -->
+    <link rel="stylesheet" href="https://use.typekit.net/flh3wqr.css" />
+    <!-- font：Arial Blackの読み込み -->
+    <link rel="stylesheet" href="https://use.typekit.net/flh3wqr.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>節約＝〇〇？</h1>
+
+      <div class="background-text-container">
+        <div class="text-track to-left">
+          <div class="text-content">
+            本当に節約って意味あるの？&emsp;&emsp;&emsp;楽しく節約したい&emsp;&emsp;&emsp;
+            数百円だし、いっか。&emsp;&emsp;&emsp;自分だけノリ悪いって思われたくない&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-right">
+          <div class="text-content">
+            気づいたらお金がない...&emsp;&emsp;&emsp;節約って面倒...&emsp;&emsp;&emsp;
+            サブスク使ってないけど毎月払ってるかも&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-left">
+          <div class="text-content">
+            今月何に使ったっけ？&emsp;&emsp;&emsp;ご褒美は必要。&emsp;&emsp;&emsp;頑張りすぎてもリバウンドしちゃう&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-right">
+          <div class="text-content">
+            スイーツは我慢したくない！&emsp;&emsp;&emsp;何から始めればいいか分からない...&emsp;&emsp;&emsp;
+            貧乏くさい&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-left">
+          <div class="text-content">
+            正直節約っていいことあるの？&emsp;&emsp;&emsp;三日坊主で終わった&emsp;&emsp;&emsp;物欲が止まらない&emsp;&emsp;&emsp;
+            いつか貯まるっしょ！&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-right">
+          <div class="text-content">
+            家計簿続かない&emsp;&emsp;&emsp;考えるのが面倒&emsp;&emsp;&emsp;自炊する方がお金かかる気がする&emsp;&emsp;&emsp;
+            お菓子やめたら肌荒れ治った！&emsp;&emsp;&emsp;
+          </div>
+        </div>
+        <div class="text-track to-left">
+          <div class="text-content">
+            楽しみまで削りたくない&emsp;&emsp;&emsp;旅行のために貯金したい&emsp;&emsp;&emsp;
+            歩くの疲れたし電車乗ろう
+            次のライブのために貯金だ！&emsp;&emsp;&emsp;
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="top">
+      <div class="top-box">
+        <p class="top-text-important">
+          <strong>節約</strong>と聞いて、<br />
+          皆さんは何を思い浮かべますか？
+        </p>
+        <p class="top-text-normal">
+          面倒のなもの、ストレスになるもの。<br />
+          そう思い中々行動に起こせない人が<br />
+          多いかもしれません。
+        </p>
+        <p class="top-text-important">
+          このサイトでは「節約って面倒」を<br />
+          <strong>「少し軽くするヒント」</strong><br />
+          を紹介します。
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="topic-title">
+        <h2>私について</h2>
+        <p class="h2-sub">ABOUT</p>
+      </div>
+      <div class="about-content">
+        <div class="about-left">
+          <img src="images/icon.png" alt="わたし" class="img-icon" />
+          <div class="profile">
+            <img src="images/Vector 1.png" alt="" class="vector" />
+            <p class="profile-text">
+              ごくごく普通の大学生<br />
+              自他ともに認める節約家
+            </p>
+            <img src="images/Vector 2.png" alt="" class="vector" />
+          </div>
+        </div>
+        <p class="about-text">
+          大学生になってから、特に節約を意識するようになる。毎日開くアプリは「家計簿」と「ポイ活アプリ」。我慢しすぎる節約はしたくないけれど、好きなことは思いきり楽しみたい。旅行、友達、美味しいご飯など、経験にお金を使いたいタイプ。日常を少し工夫しながら節約している。
+        </p>
+      </div>
+    </section>
+
+    <section id="If">
+      <div class="topic-title">
+        <h2>こんなとき、私なら？</h2>
+        <p class="h2-sub">If it were me?</p>
+      </div>
+      <div class="mini-topic-box">
+        <div class="mini-topic-left">
+          <p class="mini-topic-number">01</p>
+          <p class="mini-topic-title">楽して<br />節約</p>
+          <p class="allow">↓</p>
+        </div>
+        <div class="mini-topic-left">
+          <p class="mini-topic-number">02</p>
+          <p class="mini-topic-title">歩くの<br />面倒...</p>
+          <p class="allow">↓</p>
+        </div>
+        <div class="mini-topic-right">
+          <p class="mini-topic-number">03</p>
+          <p class="mini-topic-title">コンビニ</p>
+          <p class="allow">↓</p>
+        </div>
+        <div class="mini-topic-right">
+          <p class="mini-topic-number">04</p>
+          <p class="mini-topic-title">衝動買い</p>
+          <p class="allow">↓</p>
+        </div>
+      </div>
+      <div class="content-box">
+        <div class="each-box">
+          <div class="pc-top">
+            <div class="title-box">
+              <p class="number">01</p>
+              <p class="content-text">
+                我慢してる感ないのに<br />
+                節約できてる魔法のような<br />
+                方法ってないのかな？
+              </p>
+            </div>
+            <img src="images/01.png" alt="" class="img-02-content" />
+          </div>
+          <p class="allow">↓</p>
+          <div class="answer-box">
+            <p class="content-text">ポイ活の習慣化がおすすめ！</p>
+          </div>
+          <p class="detail-btn">どういうこと？</p>
+        </div>
+        <div class="each-box">
+          <div class="pc-top">
+            <div class="title-box">
+              <p class="number">02</p>
+              <p class="content-text">
+                １駅だけだけど、<br />
+                歩くの面倒だし<br />
+                電車に乗っちゃおうかな...
+              </p>
+            </div>
+            <img src="images/02.png" alt="" class="img-02-content" />
+          </div>
+          <p class="allow">↓</p>
+          <div class="answer-box">
+            <p class="content-text">徒歩30分なら歩いてみよう！</p>
+          </div>
+          <p class="detail-btn">どういうこと？</p>
+        </div>
+        <div class="each-box">
+          <div class="pc-top">
+            <div class="title-box">
+              <p class="number">03</p>
+              <p class="content-text">
+                疲れているときに<br />
+                コンビニに通りかかると<br />
+                つい入って買っちゃう
+              </p>
+            </div>
+            <img src="images/03.png" alt="" class="img-02-content" />
+          </div>
+          <p class="allow">↓</p>
+          <div class="answer-box">
+            <p class="content-text">
+              コンビニでの買い物、<br />やめられないよね
+            </p>
+          </div>
+          <p class="detail-btn">どういうこと？</p>
+        </div>
+        <div class="each-box">
+          <div class="pc-top">
+            <div class="title-box">
+              <p class="number">04</p>
+              <p class="content-text">
+                節約したくても<br />
+                欲しいものに出会ったら<br />
+                つい買っちゃう...
+              </p>
+            </div>
+            <img src="images/04.png" alt="" class="img-02-content" />
+          </div>
+          <p class="allow">↓</p>
+          <div class="answer-box">
+            <p class="content-text">一旦１日寝かせてみよう！</p>
+          </div>
+          <p class="detail-btn">どういうこと？</p>
+        </div>
+      </div>
+    </section>
+    <section id="How">
+      <div class="reserch-all-box">
+        <div class="topic-title">
+          <h2>比べてみた</h2>
+          <p class="h2-sub">How defferent is it?</p>
+        </div>
+        <p class="intro">
+          大学2年生で、１人暮らしをしている<br />
+          ふたりの普段の出費を比較してみました。
+        </p>
+        <div class="reserch-box-first">
+          <div class="AB-box A-box">
+            <div class="AB-info">
+              <p class="name">Aさん</p>
+              <p class="people-text">「今月も意識できた！」</p>
+            </div>
+            <img src="images/Aさん.png" alt="" class="reserch-img" />
+          </div>
+          <div class="border-line"></div>
+          <div class="AB-box">
+            <div class="AB-info">
+              <p class="name">Bさん</p>
+              <p class="people-text">「あまりできなかった...」</p>
+            </div>
+            <img src="images/Bさん.png" alt="" class="reserch-img" />
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="reserch-box">
+            <div class="reserch-title-box">
+              <img src="images/food_1.png" alt="" class="reserch-title-img" />
+              <p class="reserch-ttle">食費</p>
+              <img src="images/food_1.png" alt="" class="reserch-title-img" />
+            </div>
+            <div class="reserch-content-box">
+              <div class="AB-content-box">
+                <p class="name">Aさん</p>
+                <p class="people-text">
+                  コンビニ５回<br />
+                  （１回１個購入）
+                </p>
+                <div class="price-box">
+                  <p class="price">7,886</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="border-line2"></div>
+              <div class="AB-content-box">
+                <p class="name">Bさん</p>
+                <p class="people-text">
+                  コンビニ９回<br />
+                  （１回２•３個購入）
+                </p>
+                <div class="price-box">
+                  <p class="price">12,554</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserch-box">
+            <div class="reserch-title-box">
+              <img src="images/food_2.png" alt="" class="reserch-title-img" />
+              <p class="reserch-ttle">外食費</p>
+              <img src="images/food_2.png" alt="" class="reserch-title-img" />
+            </div>
+            <div class="reserch-content-box">
+              <div class="AB-content-box">
+                <p class="name">Aさん</p>
+                <p class="people-text">
+                  外食６回<br />
+                  （週１•２回）
+                </p>
+                <div class="price-box">
+                  <p class="price">8,458</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="border-line2"></div>
+              <div class="AB-content-box">
+                <p class="name">Bさん</p>
+                <p class="people-text">
+                  外食９回<br />
+                  （週２•３回）
+                </p>
+                <div class="price-box">
+                  <p class="price">12,430</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserch-box">
+            <div class="reserch-title-box">
+              <img src="images/train.png" alt="" class="reserch-title-img" />
+              <p class="reserch-ttle">交通費</p>
+              <img src="images/train.png" alt="" class="reserch-title-img" />
+            </div>
+            <div class="reserch-content-box">
+              <div class="AB-content-box">
+                <p class="name">Aさん</p>
+                <p class="people-text">
+                  １駅歩いた日が<br />
+                  １回ある
+                </p>
+                <div class="price-box">
+                  <p class="price">3,778</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="border-line2"></div>
+              <div class="AB-content-box">
+                <p class="name">Bさん</p>
+                <p class="people-text">
+                  歩いたことは<br />
+                  １回も無い
+                </p>
+                <div class="price-box">
+                  <p class="price">4,134</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserch-box">
+            <div class="reserch-title-box">
+              <img src="images/cloth.png" alt="" class="reserch-title-img" />
+              <p class="reserch-ttle">衣服</p>
+              <img src="images/cloth.png" alt="" class="reserch-title-img" />
+            </div>
+            <div class="reserch-content-box">
+              <div class="AB-content-box">
+                <p class="name">Aさん</p>
+                <p class="people-text">買う前に１日置いた<br /></p>
+                <div class="price-box">
+                  <p class="price">0</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="border-line2"></div>
+              <div class="AB-content-box">
+                <p class="name">Bさん</p>
+                <p class="people-text">勢いですぐ買った</p>
+                <div class="price-box">
+                  <p class="price">2,990</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserch-box">
+            <div class="reserch-title-box">
+              <img src="images/fun.png" alt="" class="reserch-title-img" />
+              <p class="reserch-ttle">遊</p>
+              <img src="images/fun.png" alt="" class="reserch-title-img" />
+            </div>
+            <div class="reserch-content-box">
+              <div class="AB-content-box">
+                <p class="name">Aさん</p>
+                <p class="people-text">
+                  カラオケは<br />
+                  朝に行った
+                </p>
+                <div class="price-box">
+                  <p class="price">5,690</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="border-line2"></div>
+              <div class="AB-content-box">
+                <p class="name">Bさん</p>
+                <p class="people-text">
+                  カラオケは夜に<br />
+                  ２回行った
+                </p>
+                <div class="price-box">
+                  <p class="price">7,450</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result-box">
+            <div class="text">
+              <p class="result-text">この月のふたりの支出の合計は、</p>
+              <div class="result-people-box">
+                <p class="result-name">Aさん</p>
+                <div class="result-price-box">
+                  <p class="result-price">51,945</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="result-people-box">
+                <p class="result-name">Bさん</p>
+                <div class="result-price-box">
+                  <p class="result-price">65,691</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+            <div class="difference-box">
+              <div class="difference-row">
+                <p class="result-text">差額は</p>
+                <div class="difference-price-box">
+                  <p class="price">13,746</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+              <div class="difference-row">
+                <p class="result-text">半年続くと、差額は</p>
+                <div class="difference-price-box">
+                  <p class="price">82,476</p>
+                  <p class="yen">円</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="top-text-normal conclusion">
+        今回比べてみて、<br />
+        <strong>小さな工夫の積み重ね</strong>が意外と<br />
+        大きな差になることがわかりました。<br />
+        でも、全部を一気に変える必要はありません。<br />
+        まずは、<strong>「これならできそう！」</strong>と<br />
+        思ったことから試してみませんか？
+      </p>
+      <p class="back-to-top-btn">トップへ戻る</p>
+    </section>
+    <footer>
+      <p class="copyright">©︎Created by みよみよ</p>
+      <div class="footer-img-box">
+        <img src="images/footer_1.png" alt="" class="footer-img" />
+        <img src="images/footer_2.png" alt="" class="footer-img" />
+        <img src="images/footer_3.png" alt="" class="footer-img" />
+      </div>
+    </footer>
+  </body>
 </html>
