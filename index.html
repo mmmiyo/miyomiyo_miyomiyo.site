@@ -30,6 +30,8 @@
     <!-- font：Arial Blackの読み込み -->
     <link rel="stylesheet" href="https://use.typekit.net/flh3wqr.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+    <!-- deferがあると、HTMLを全部読み込んでから、JSを実行してくれる -->
   </head>
 
   <body>
@@ -168,7 +170,11 @@
           <div class="answer-box">
             <p class="content-text">ポイ活の習慣化がおすすめ！</p>
           </div>
-          <p class="detail-btn">どういうこと？</p>
+          <div class="modal-box">
+            <a href="#first" class="modal-button">
+              <p class="detail-btn">どういうこと？</p>
+            </a>
+          </div>
         </div>
         <div class="each-box">
           <div class="pc-top">
@@ -455,7 +461,7 @@
         まずは、<strong>「これならできそう！」</strong>と<br />
         思ったことから試してみませんか？
       </p>
-      <p class="back-to-top-btn">トップへ戻る</p>
+      <button class="back-to-top-btn">トップへ戻る</button>
     </section>
     <footer>
       <p class="copyright">©︎Created by みよみよ</p>

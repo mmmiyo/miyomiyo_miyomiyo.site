@@ -18,6 +18,7 @@ body {
 header {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,22 +115,22 @@ header h1 {
 .top-text-important {
   font-size: 14px;
   font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 15%;
+  line-height: 2.29;
+  letter-spacing: 0.15em;
 }
 
 .top-text-normal {
   font-size: 14px;
   font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 15%;
+  line-height: 2;
+  letter-spacing: 0.15em;
 }
 
 strong {
   font-size: 18px;
   font-weight: 900;
-  line-height: 32px;
-  letter-spacing: 20%;
+  line-height: 1.78;
+  letter-spacing: 0.2em;
 }
 
 #about {
@@ -155,7 +156,7 @@ h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   margin-top: 10px;
 }
 
@@ -166,8 +167,8 @@ h2 {
 .profile-text {
   font-size: 12px;
   font-weight: 900; /*700でもいいかも？太くね？*/
-  line-height: 28px;
-  letter-spacing: 30%;
+  line-height: 2.33;
+  letter-spacing: 0.3em;
   text-align: center;
   margin: 0 28px;
 }
@@ -187,8 +188,8 @@ h2 {
 .about-text {
   font-size: 14px;
   font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 10%;
+  line-height: 1.86;
+  letter-spacing: 0.1em;
 }
 
 .profile {
@@ -218,23 +219,23 @@ h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 40%;
+  line-height: 1.2;
+  letter-spacing: 0.4em;
 }
 
 .mini-topic-title {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
 }
 
 .allow {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .mini-topic-box {
@@ -263,8 +264,8 @@ h2 {
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 40%;
+  line-height: 1.2;
+  letter-spacing: 0.4em;
 }
 
 .content-text {
@@ -272,8 +273,8 @@ h2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  letter-spacing: 40%;
+  line-height: 1.2;
+  letter-spacing: 0.4em;
 }
 
 .title-box {
@@ -308,8 +309,8 @@ h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  letter-spacing: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
   display: inline;
 }
 
@@ -340,8 +341,8 @@ h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 20%;
+  line-height: 1.42;
+  letter-spacing: 0.2em;
 }
 
 .name {
@@ -349,7 +350,7 @@ h2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .people-text {
@@ -357,7 +358,7 @@ h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .reserch-img {
@@ -405,7 +406,7 @@ h2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .reserch-title-img {
@@ -478,7 +479,7 @@ h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .result-name {
@@ -486,7 +487,7 @@ h2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 .result-price {
@@ -548,10 +549,7 @@ h2 {
 }
 
 .back-to-top-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline;
+  display: inline-block;
   background-color: #ffffff;
   padding: 10px 30px;
   border-radius: 50px;
@@ -559,10 +557,17 @@ h2 {
   color: #555555;
   text-align: center;
   font-size: 12px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  letter-spacing: 10%;
+  letter-spacing: 0.1em;
+
+  cursor: pointer; /*マウスを乗せたら指に変化*/
+  transition: all 0.3s ease; /*ホバーアニメーションをなめらかに*/
+}
+
+.back-to-top-btn:hover {
+  background-color: #e98044;
+  color: #f9f7e8;
+  border: 1px solid #555555;
 }
 
 .copyright {
@@ -570,8 +575,8 @@ h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 21%;
+  line-height: 1.2;
+  letter-spacing: 0.21em;
 }
 
 .footer-img {
@@ -634,20 +639,20 @@ footer {
 
   .top-text-important {
     font-size: 20px;
-    line-height: 48px;
-    letter-spacing: 15%;
+    line-height: 2.4;
+    letter-spacing: 0.15em;
   }
 
   .top-text-normal {
     font-size: 20px;
-    line-height: 40px;
-    letter-spacing: 15%;
+    line-height: 2;
+    letter-spacing: 0.15em;
   }
 
   strong {
     font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 20%;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
   }
 
   h2 {
@@ -660,8 +665,8 @@ footer {
   }
 
   #about {
-    padding: 60px 115px;
-    margin: 0 170px;
+    padding: 4vw 8vw;
+    margin: 0 10vw;
   }
 
   .img-icon {
@@ -674,9 +679,8 @@ footer {
     text-align: center;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 155.556% */
-    letter-spacing: 20%;
+    line-height: 1.87; /* 155.556% */
+    letter-spacing: 0.2em;
     margin: 0;
   }
 
@@ -687,11 +691,60 @@ footer {
   .about-text {
     margin: 30px 0;
     text-align: justify;
-    font-size: 20px;
-    font-style: normal;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 2; /* 200% */
+    letter-spacing: 0.1em;
+  }
+
+  .profile-text {
+    text-align: center;
+    font-size: clamp(12px, 1vw, 15px);
+    line-height: 1.87; /* 155.556% */
+    letter-spacing: 0.2em;
+    margin: 0;
+  }
+
+  .top-text-important {
+    font-size: clamp(14px, 1.4vw, 20px);
+    line-height: 2.4;
+    letter-spacing: 0.15em;
+  }
+
+  .top-text-normal {
+    font-size: clamp(14px, 1.4vw, 20px);
+    line-height: 2;
+    letter-spacing: 0.15em;
+  }
+
+  .mini-topic-number {
+    font-size: clamp(16px, 1.6vw, 24px);
+  }
+
+  .mini-topic-title {
+    font-size: clamp(16px, 1.6vw, 24px);
+    letter-spacing: 0.4em;
+  }
+
+  .allow {
+    text-align: center;
+    font-size: clamp(20px, 2vw, 24px);
     font-weight: 500;
-    line-height: 40px; /* 200% */
-    letter-spacing: 10%;
+    line-height: 1.2;
+  }
+
+  .number {
+    font-size: clamp(42px, 4.2vw, 64px);
+  }
+
+  .content-text {
+    font-size: clamp(24px, 2.3vw, 32px);
+  }
+
+  .detail-btn {
+    text-align: center;
+    font-size: clamp(14px, 1.4vw, 20px);
+    font-weight: 500;
+    line-height: 1.2;
   }
 
   .about-content {
@@ -704,6 +757,7 @@ footer {
 
   #If {
     margin-top: 300px;
+    gap: 100px;
   }
 
   .topic-title {
@@ -718,14 +772,14 @@ footer {
 
   .mini-topic-title {
     font-size: 24px;
-    letter-spacing: 40%;
+    letter-spacing: 0.4em;
   }
 
   .allow {
     text-align: center;
     font-size: 24px;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.2;
   }
 
   .mini-topic-box {
@@ -734,14 +788,6 @@ footer {
 
   .mini-topic-right {
     gap: 17px;
-  }
-
-  .number {
-    font-size: 64px;
-  }
-
-  .content-text {
-    font-size: 32px;
   }
 
   .title-box {
@@ -771,7 +817,7 @@ footer {
   }
 
   .content-box {
-    gap: 150px;
+    gap: 200px;
   }
 
   #How {
@@ -780,8 +826,8 @@ footer {
 
   .intro {
     font-size: 20px;
-    line-height: 40px;
-    letter-spacing: 40%;
+    line-height: 2;
+    letter-spacing: 0.4em;
   }
 
   .name {
@@ -790,7 +836,8 @@ footer {
 
   .people-text {
     font-size: 18px;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
+    line-height: 1.2;
   }
 
   .reserch-img {
@@ -815,119 +862,13 @@ footer {
   }
 
   .A-box {
-    display: flex;
     flex-direction: row-reverse;
-  }
-
-  .border-line {
-    width: 1px; /* Figma通りの横幅 */
-    height: 175px; /* Figma通りの高さ */
-    border-left: 1px dashed #555555; /* Figma通りのグレーの線 */
   }
 
   .reserch-box-first {
     border-radius: none;
     border: none;
     background: none;
-  }
-
-  .reserch-ttle {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .reserch-title-img {
-    width: 35px;
-    height: 35px;
-    aspect-ratio: 1/1;
-  }
-
-  .reserch-title-box {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-left: 82px;
-    padding-right: 82px;
-    padding-bottom: 5px;
-    border-bottom: 1px dashed #555555;
-  }
-
-  .border-line2 {
-    width: 1px;
-    height: 114px;
-    border-left: 1px dashed #555555;
-  }
-
-  .price {
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 28px;
-  }
-
-  .price-box {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .reserch-content-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .reserch-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #555;
-    background: #fffffb;
-  }
-
-  .result-text {
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .result-name {
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .result-price {
-    font-family: "arial", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 40px;
-    color: #f9f7e8;
-    -webkit-text-stroke: 1px #555555; /* ベンダープレフィックス */
-    /* text-stroke: 1px #555555; */
-  }
-
-  .result-price-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .result-people-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 5px;
   }
 
   .grid-container {
@@ -939,75 +880,21 @@ footer {
     align-items: stretch;
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .difference-price-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .difference-row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .result-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 30px 50px;
-    background-color: #f0e47d;
-    border-radius: 20px;
-  }
-
   .conclusion {
     text-align: center;
     margin: 200px 0;
   }
 
-  .back-to-top-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: inline;
-    background-color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 1px solid #555555;
-    color: #555555;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 10%;
-  }
-
   .copyright {
     font-size: 16px;
-    letter-spacing: 30%;
+    letter-spacing: 0.3em;
+    line-height: 1.2;
   }
 
   .footer-img {
     width: 350px;
     height: 467px;
     aspect-ratio: 350/467;
-  }
-
-  .footer-img-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 
   footer {
