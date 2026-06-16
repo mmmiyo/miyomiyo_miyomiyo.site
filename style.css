@@ -6,6 +6,10 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   /* 画面サイズをスマホの横幅（390px）に */
   max-width: 390px;
@@ -250,7 +254,7 @@ h2 {
   align-items: center;
 }
 
-.mini-topic-right {
+.mini-topic-right .a-mini-topic {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,6 +339,8 @@ a {
 }
 
 .modal-img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   min-width: 80%;
   height: auto;
@@ -390,6 +396,13 @@ a {
   flex-direction: column;
 } */
 
+.If {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
 #How {
   margin-top: 200px;
   display: flex;
@@ -423,10 +436,10 @@ a {
 }
 
 .reserch-img {
-  width: 110px;
-  height: 110px;
+  width: clamp(80px, 28vw, 110px);
+  height: auto; /* aspect-ratioで比率を保つ */
   flex-shrink: 0;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1181 / 1632;
 }
 
 .AB-box {
@@ -460,6 +473,7 @@ a {
   border-radius: 20px;
   border: 1px solid #555;
   background: #fffffb;
+  margin: 0 170px;
 }
 
 .reserch-ttle {
@@ -479,6 +493,7 @@ a {
 .reserch-title-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   padding-left: 82px;
   padding-right: 82px;
@@ -602,6 +617,15 @@ a {
   padding: 30px 50px;
   background-color: #f0e47d;
   border-radius: 20px;
+}
+
+.result-text
+  .result-name
+  .result-price-box
+  > .yen
+  .difference-price-box
+  > .yen {
+  margin-bottom: 10px;
 }
 
 .conclusion {
@@ -917,9 +941,9 @@ footer {
   }
 
   .reserch-img {
-    width: 217px;
-    height: 300px;
-    aspect-ratio: 34/47;
+    width: 15vw;
+    height: auto;
+    aspect-ratio: 1181 / 1632;
   }
 
   .AB-info {
@@ -945,6 +969,7 @@ footer {
     border-radius: none;
     border: none;
     background: none;
+    padding: 0;
   }
 
   .grid-container {
