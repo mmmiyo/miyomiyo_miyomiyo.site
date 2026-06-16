@@ -29,14 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document
   .querySelector(".back-to-top-btn")
   .addEventListener("click", function () {
-    //scrollToが効かないブラウザ向けに両方書く
+    // 💡 どのブラウザ（ChromeやSafari）でも、一番上(0px)まで滑らかに戻す決定版の書き方
     window.scrollTo({
-      //Chrome対応
       top: 0,
-      behavior: "smooth", //なめらかにスクロール
+      behavior: "smooth",
     });
-    document.documentElement.scrollTop = 0; // Safari対策
-    document.body.scrollTop = 0; // 古いiOS Safari対策
   });
 
 $(document).ready(function () {
