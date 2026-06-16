@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("js-hamburger");
+  const nav = document.getElementById("js-nav");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("is-active");
+    nav.classList.toggle("is-active");
+  });
+
+  // メニュー内のリンクをクリックした時にも閉じる
+  const navLinks = document.querySelectorAll(".nav-links a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("is-active");
+      nav.classList.remove("is-active");
+    });
+  });
+  const toggleBtn = document.querySelector(".sub-toggle-btn");
+  const parentLi = document.querySelector(".has-sub");
+
+  if (toggleBtn && parentLi) {
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      parentLi.classList.toggle("is-open");
+    });
+  }
+});
+
 document
   .querySelector(".back-to-top-btn")
   .addEventListener("click", function () {
