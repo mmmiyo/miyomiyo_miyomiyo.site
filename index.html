@@ -29,9 +29,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/flh3wqr.css" />
     <!-- font：Arial Blackの読み込み -->
     <link rel="stylesheet" href="https://use.typekit.net/flh3wqr.css" />
+    <link rel="stylesheet" href="modaal.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="js/main.js" defer></script>
-    <!-- deferがあると、HTMLを全部読み込んでから、JSを実行してくれる -->
   </head>
 
   <body>
@@ -87,7 +86,7 @@
     <section id="top">
       <div class="top-box">
         <p class="top-text-important">
-          <strong>節約</strong>と聞いて、<br />
+          <strong class="strong-top">節約</strong>と聞いて、<br />
           皆さんは何を思い浮かべますか？
         </p>
         <p class="top-text-normal">
@@ -170,10 +169,24 @@
           <div class="answer-box">
             <p class="content-text">ポイ活の習慣化がおすすめ！</p>
           </div>
-          <div class="modal-box">
-            <a href="#first" class="modal-button">
-              <p class="detail-btn">どういうこと？</p>
-            </a>
+          <div class="modal">
+            <div class="modal-box">
+              <a href="#first" class="modal-button">
+                <button class="detail-btn">どういうこと？</button>
+              </a>
+            </div>
+            <div id="first" style="display: none" class="If">
+              <p class="modal-text-normal">
+                私は夜ご飯を食べながら、ポイント回収用の動画を見ていました。最初は少し面倒でも、習慣になるとあとは勝手に貯まっていきます。気づけば500円、放置していたら1500円以上になっていたことも。500円あればコンビニのお弁当や肉まんも買えます。
+              </p>
+              <p class="madal-text-im-1">
+                無理に頑張るより、毎日の生活に組み込んでしまうのがおすすめです！
+              </p>
+              <p class="modal-text-komezirushi">
+                ※決してポイ活アプリ会社によるPRではございません。
+              </p>
+              <img src="images/01_detail.png" alt="" class="modal-img" />
+            </div>
           </div>
         </div>
         <div class="each-box">
@@ -192,7 +205,28 @@
           <div class="answer-box">
             <p class="content-text">徒歩30分なら歩いてみよう！</p>
           </div>
-          <p class="detail-btn">どういうこと？</p>
+          <div class="modal">
+            <div class="modal-box">
+              <a href="#second" class="modal-button">
+                <button class="detail-btn">どういうこと？</button>
+              </a>
+            </div>
+            <div id="second" style="display: none" class="If">
+              <p class="modal-text-normal">
+                徒歩30分と聞くと、「長い…」と思うかもしれません。でも実際に歩いてみると、音楽を聴いたり友達と話したりしているうちに意外と<strong
+                  class="strong-modal"
+                  >あっという間</strong
+                >です。
+                私も「１駅だけだし歩いてみるか〜」くらいの気持ちで歩くことがあります。
+                <strong class="strong-modal"
+                  >交通費が浮くだけでなく、ポイ活のポイントも貯まるのでちょっとお得です♪</strong
+                >
+                課題やスマホで画面を見る時間が多い大学生にとって、外を歩く時間は良い気分転換にもなります。<br />
+                天気の良い日は、一度試してみませんか？
+              </p>
+              <img src="images/02_detail.png" alt="" class="modal-img" />
+            </div>
+          </div>
         </div>
         <div class="each-box">
           <div class="pc-top">
@@ -212,7 +246,26 @@
               コンビニでの買い物、<br />やめられないよね
             </p>
           </div>
-          <p class="detail-btn">どういうこと？</p>
+          <div class="modal">
+            <div class="modal-box">
+              <a href="#three" class="modal-button">
+                <button class="detail-btn">どういうこと？</button>
+              </a>
+            </div>
+            <div id="three" style="display: none" class="If">
+              <p class="modal-text-normal">
+                「コンビニは控えよう」とよく言われます。でも私は、無理にやめる必要はないと思っています。疲れた日は、自分を労ることも大切。<br />
+                <strong class="strong-modal">「買うのは１つだけ」</strong><br />
+                <strong class="strong-modal">「行く回数を少し減らす」</strong
+                ><br />
+                そんな小さな工夫でも十分です。コンビニをやめるのではなく、<strong
+                  class="strong-modal"
+                  >上手に付き合っていく。</strong
+                >私はそんな節約の方が続けやすいと思っています。
+              </p>
+              <img src="images/03_detail.png" alt="" class="modal-img" />
+            </div>
+          </div>
         </div>
         <div class="each-box">
           <div class="pc-top">
@@ -230,7 +283,25 @@
           <div class="answer-box">
             <p class="content-text">一旦１日寝かせてみよう！</p>
           </div>
-          <p class="detail-btn">どういうこと？</p>
+          <div class="modal">
+            <div class="modal-box">
+              <a href="#four" class="modal-button">
+                <button class="detail-btn">どういうこと？</button>
+              </a>
+            </div>
+            <div id="four" style="display: none" class="If">
+              <p class="modal-text-normal">
+                買い物をしていると、「これ欲しい〜！」と思うことってあるよね。
+                でも少しでも迷ったら、一旦その日は買わずに帰ってみるのがおすすめ。
+                家に帰ると意外と「買わなくてもよかったかも」と思うことがあります。
+                逆に、<strong class="strong-modal"
+                  >本当に欲しいものは1日経っても忘れません。</strong
+                >
+                だから私は、迷ったら一旦寝かせます。それでも欲しかったら、その時に買えばいいんです◎
+              </p>
+              <img src="images/04_detail.png" alt="" class="modal-img" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -471,5 +542,8 @@
         <img src="images/footer_3.png" alt="" class="footer-img" />
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/modaal.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

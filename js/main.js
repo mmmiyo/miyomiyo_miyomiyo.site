@@ -10,3 +10,7 @@ document
     document.documentElement.scrollTop = 0; // Safari対策
     document.body.scrollTop = 0; // 古いiOS Safari対策
   });
+
+$(document).ready(function () {
+  $(".modal-button").modaal();
+});

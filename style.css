@@ -126,7 +126,7 @@ header h1 {
   letter-spacing: 0.15em;
 }
 
-strong {
+.strong-top {
   font-size: 18px;
   font-weight: 900;
   line-height: 1.78;
@@ -284,6 +284,7 @@ h2 {
 }
 
 .img-02-content {
+  margin: 20px;
   width: 334px;
   height: 334px;
   aspect-ratio: 1/1;
@@ -314,6 +315,10 @@ h2 {
   display: inline;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .each-box {
   display: flex;
   flex-direction: column;
@@ -328,6 +333,62 @@ h2 {
   gap: 140px;
   padding: 0 32px;
 }
+
+.modal-img {
+  width: 100%;
+  min-width: 80%;
+  height: auto;
+}
+
+.modaal-wrapper .modaal-container {
+  min-width: clamp(200px, 80%, 300px);
+  padding: 20px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #808080;
+  box-shadow: 4px 4px 0 0 #f0e47d;
+}
+
+.modal-text-normal {
+  text-align: justify;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 1.4px;
+}
+
+.madal-text-im-1 {
+  text-align: justify;
+  padding: 10px 0;
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+}
+
+.modal-text-komezirushi {
+  text-align: justify;
+  font-size: clamp(12px, 2.05vw, 16px);
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 2.4px;
+}
+
+.strong-modal {
+  text-align: justify;
+  font-size: clamp(16px, 2.9vw, 24px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 1.4px;
+}
+
+/* #first,
+#second,
+#three,
+#four {
+  display: flex;
+  flex-direction: column;
+} */
 
 #How {
   margin-top: 200px;
@@ -818,6 +879,21 @@ footer {
 
   .content-box {
     gap: 200px;
+  }
+
+  /* #first,
+  #second,
+  #three,
+  #four {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  } */
+
+  .modal-img {
+    width: 40%; /* PC時の画像の幅 */
+    min-width: unset;
   }
 
   #How {
