@@ -526,14 +526,15 @@ a {
 .modal-img {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  min-width: 80%;
+  width: clamp(300px, 50%, 480px);
+  /* width: 100%;
+  min-width: 80%; */
   height: auto;
 }
 
 .modaal-wrapper .modaal-container {
   min-width: clamp(200px, 80%, 300px);
-  padding: 50px;
+  padding: 30px 8px;
   height: auto;
   border-radius: 20px;
   border: 1px solid #808080;
@@ -1095,6 +1096,10 @@ footer {
     gap: 115px;
   }
 
+  .modaal-wrapper .modaal-container {
+    padding: 50px;
+  }
+
   #If {
     margin-top: 300px;
     gap: 100px;
@@ -1161,8 +1166,9 @@ footer {
   }
 
   .modal-img {
-    width: 40%; /* PC時の画像の幅 */
-    min-width: unset;
+    /* width: 40%; PC時の画像の幅  */
+    /* min-width: unset; */
+    width: clamp(280px, 50%, 450px);
   }
 
   #How {
