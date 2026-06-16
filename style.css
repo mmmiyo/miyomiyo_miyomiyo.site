@@ -3,6 +3,8 @@ body {
   width: 100%; /*???*/
   overflow-x: hidden; /*横方向のはみ出しを完全カット*/
   scroll-behavior: smooth;
+  /* スマホの文字サイズ自動調整機能を完全にオフにする */
+  -webkit-text-size-adjust: 100%;
 }
 
 * {
