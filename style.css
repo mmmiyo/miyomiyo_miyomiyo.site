@@ -197,19 +197,30 @@ header {
 
 header h1 {
   font-size: clamp(24px, 3vw, 36px);
-  font-weight: 900;
   font-family: "Inter", sans-serif;
+  /*  届いているフォント(900)をそのまま使うように指定 */
+  font-weight: 700 !important; /* */
+
+  /* Safariが文字を勝手にこれ以上肉付けするのを禁止する */
+  -webkit-text-stroke: 0px transparent !important;
+  text-rendering: optimizeLegibility !important;
 }
 
 .strong-h1 {
   font-size: clamp(40px, 6vw, 80px);
-  font-weight: 900;
   font-family: "Inter", sans-serif;
+  /*  届いているフォント(900)をそのまま使うように指定 */
+  font-weight: 700 !important; /* */
+
+  /* Safariが文字を勝手にこれ以上肉付けするのを禁止する */
+  -webkit-text-stroke: 0px transparent !important;
+  text-rendering: optimizeLegibility !important;
 }
 
 header h1 {
   position: relative;
   z-index: 2;
+  font-weight: 900;
 }
 
 /*背景コンテナ*/
