@@ -533,7 +533,7 @@ a {
 
 .modaal-wrapper .modaal-container {
   min-width: clamp(200px, 80%, 300px);
-  padding: 20px;
+  padding: 50px;
   height: auto;
   border-radius: 20px;
   border: 1px solid #808080;
