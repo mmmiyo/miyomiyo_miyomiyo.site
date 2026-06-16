@@ -98,11 +98,11 @@ header {
 /*メニューの中身（右上からにゅっと）*/
 .nav-menu {
   position: fixed;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 8px;
   width: 280px;
   max-width: calc(100% - 30%); /*スマホ幅でも画面からはみ出さないように*/
-  padding: 80px 24px 40px 24px;
+  padding: 65px 32px 50px 24px;
   background-color: #f0e47d;
   border: 1px solid #555555;
   border-radius: 30px;
@@ -121,7 +121,8 @@ header {
     right: 20px;
   }
   .nav-menu {
-    right: 20px;
+    top: 10px;
+    right: 13px;
   }
 }
 
@@ -140,19 +141,20 @@ header {
   display: flex;
   flex-direction: column;
   gap: 12px; /*メニュー同士の間隔*/
+  align-items: flex-start;
 }
 
 .nav-links li a {
-  display: block;
+  display: inline-block;
+  width: max-content;
   padding: 10px 16px;
   background-color: #fff;
   border: 1px solid #555555;
   border-radius: 20px;
   text-decoration: none;
   color: #555555;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 500;
-  text-align: center;
   letter-spacing: 0.05em;
   transition: transform 0.2s;
 }
@@ -164,6 +166,7 @@ header {
 
 .sub-links {
   list-style: none;
+  padding: 0 0 0 16px;
   padding: 0;
   margin: 0;
   display: flex;
@@ -186,7 +189,7 @@ header {
 /* 子メニュー内のカプセルボタンのデザイン（少し小さめにして変化をつける） */
 .sub-links li a {
   background-color: #f9f7e8;
-  font-size: 13px;
+  font-size: clamp(14px, 2vw, 16px);
   padding: 8px 12px;
 }
 
@@ -351,7 +354,7 @@ h2 {
 
 .profile-text {
   font-size: 12px;
-  font-weight: 900; /*700でもいいかも？太くね？*/
+  font-weight: 900; /*700でもいいかも？太くない？*/
   line-height: 2.33;
   letter-spacing: 0.3em;
   text-align: center;
@@ -425,8 +428,8 @@ h2 {
 
 .mini-topic-box {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .mini-topic-left {
@@ -618,14 +621,6 @@ a {
   transform: scale(0.95) !important;
 }
 
-/* #first,
-#second,
-#three,
-#four {
-  display: flex;
-  flex-direction: column;
-} */
-
 .If {
   display: flex;
   flex-direction: column;
@@ -741,7 +736,7 @@ a {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 28px;
+  font-size: clamp(26px, 4vw, 32px);
 }
 
 .price-box {
@@ -788,12 +783,25 @@ a {
   line-height: 1.2;
 }
 
+.difference-box .result-text {
+  padding-bottom: 0.6em;
+}
+
 .result-name {
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+  padding-bottom: 0.31em;
+}
+
+.result-box .yen {
+  padding-bottom: 0.31em;
+}
+
+.result-box .price {
+  margin-left: 0.25em;
 }
 
 .result-price {
@@ -848,14 +856,14 @@ a {
   border-radius: 20px;
 }
 
-.result-text
+/* .result-text
   .result-name
   .result-price-box
   > .yen
   .difference-price-box
   > .yen {
-  margin-bottom: 10px;
-}
+  padding-bottom: 10px;
+} */
 
 .conclusion {
   text-align: center;
@@ -920,7 +928,7 @@ footer {
   background-color: #ffffff !important; /* */
   box-shadow: 0 0 0 100vmax #ffffff !important; /* */
 
-  /* 【これが抜けていました！】左右にはみ出させた白い影を消さずに表示させる魔法 */
+  /* 左右にはみ出させた白い影を消さずに表示させる魔法 */
   clip-path: inset(0 -100vmax) !important;
 
   /* 他の要素の下に潜り込まないように前面に引っ張り出す */
@@ -1114,7 +1122,7 @@ footer {
   }
 
   .mini-topic-box {
-    gap: 30px;
+    width: 50%;
   }
 
   .mini-topic-right {
