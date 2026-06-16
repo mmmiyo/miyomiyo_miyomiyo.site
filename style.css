@@ -12,10 +12,6 @@ body {
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   /* 画面サイズをスマホの横幅（390px）に */
   max-width: 390px;
@@ -196,8 +192,14 @@ header {
   color: #f9f7e8;
 }
 
-h1 {
-  font-size: clamp(40px, 7.8vw, 96px);
+header h1 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+}
+
+.strong-h1 {
+  font-size: clamp(40px, 6vw, 80px);
   font-weight: 900;
   font-family: "Inter", sans-serif;
 }
@@ -788,7 +790,6 @@ a {
   font-size: 40px;
   color: #f9f7e8;
   -webkit-text-stroke: 1px #555555; /* ベンダープレフィックス */
-  /* text-stroke: 1px #555555; */
 }
 
 .result-price-box {
@@ -1119,16 +1120,6 @@ footer {
   .content-box {
     gap: 200px;
   }
-
-  /* #first,
-  #second,
-  #three,
-  #four {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  } */
 
   .modal-img {
     width: 40%; /* PC時の画像の幅 */
