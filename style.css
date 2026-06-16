@@ -191,6 +191,11 @@ header {
   padding: 8px 12px;
 }
 
+.nav-menu a:hover {
+  background-color: #e98044;
+  color: #f9f7e8;
+}
+
 h1 {
   font-size: clamp(40px, 7.8vw, 96px);
   font-weight: 900;
@@ -470,7 +475,7 @@ h2 {
   background-color: #e98044;
   padding: 10px 30px;
   border-radius: 50px;
-  border: 1px solid #555555;
+  border: 1.2px solid #555555;
   color: #fffffb;
   text-align: center;
   font-size: 12px;
@@ -548,6 +553,54 @@ a {
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: 1.4px;
+}
+
+/* 閉じるボタン（×）を白い箱の右上に引っ越しさせる */
+.modaal-close {
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+
+  /* ボタンを綺麗な「黒枠の丸形」にする設定 */
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid #555555 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+
+  display: block;
+  text-indent: -9999px !important;
+  transition:
+    background-color 0.2s,
+    transform 0.2s !important;
+}
+
+/* 新しく「×」の線を自作して、完全に真ん中に交差させる */
+.modaal-close::before,
+.modaal-close::after {
+  content: "" !important; /* 線を描くための空の要素を作る */
+  position: absolute !important;
+  top: 50% !important; /* 縦の真ん中 */
+  left: 50% !important; /* 横の真ん中 */
+  width: 16px !important; /* 線の長さ */
+  height: 2px !important; /* 線の太さ */
+  background-color: #555555 !important; /* 線の色 */
+}
+
+/* 2本の直線をそれぞれ45度ずつ傾けて「×」にする */
+.modaal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+.modaal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg) !important;
+}
+
+/* タップした時に少しだけ沈む可愛いエフェクト */
+.modaal-close:active {
+  background-color: #f0e47d !important; /*クリックしたら色が変わる*/
+  transform: scale(0.95) !important;
 }
 
 /* #first,
