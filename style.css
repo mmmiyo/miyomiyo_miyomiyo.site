@@ -432,6 +432,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  max-width: clamp(390px, 80%, 1440px);
 }
 
 .mini-topic-left {
@@ -931,6 +932,13 @@ footer {
   /* 余白の調整（イラストが下までスクロールしきれるように調整） */
   margin-top: 100px !important; /* */
   padding: 40px 10px 60px 10px !important; /* 左右に10pxだけ安全な隙間を作って中身の潰れを防止 */
+}
+
+@media (min-width: 768px) {
+  .mini-topic-box {
+    width: 60%; /* 画面幅1000pxのとき、60%（約600px）ではなく */
+    max-width: 550px; /* 👈 ここ！最大でも480pxまでに制限すると、きゅっと締まって綺麗です */
+  }
 }
 
 @media (min-width: 1024px) {
