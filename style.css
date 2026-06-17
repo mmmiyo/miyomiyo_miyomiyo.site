@@ -17,7 +17,7 @@ body {
 
 body {
   /* 画面サイズをスマホの横幅（390px）に */
-  max-width: 390px;
+  /* max-width: 390px; */
   /* パソコンで見たときに中央に寄せる */
   margin-left: auto;
   margin-right: auto;
@@ -322,12 +322,14 @@ header h1 {
 }
 
 #about {
+  max-width: 390px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 50px 32px;
-  margin: 0 16px;
+  margin: 0 auto;
   background-color: #fffffb;
   border-radius: 20px;
   border: 1px solid #555555;
@@ -527,8 +529,6 @@ a {
   display: block;
   margin: 0 auto;
   width: clamp(300px, 50%, 480px);
-  /* width: 100%;
-  min-width: 80%; */
   height: auto;
 }
 
@@ -858,15 +858,6 @@ a {
   border-radius: 20px;
 }
 
-/* .result-text
-  .result-name
-  .result-price-box
-  > .yen
-  .difference-price-box
-  > .yen {
-  padding-bottom: 10px;
-} */
-
 .conclusion {
   text-align: center;
   margin: 100px 0;
@@ -948,7 +939,6 @@ footer {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0 170px; */
   }
 
   header {
@@ -1006,8 +996,10 @@ footer {
   }
 
   #about {
+    max-width: 1100px;
+    width: 100%;
     padding: 4vw 8vw;
-    margin: 0 10vw;
+    margin: 0 auto;
   }
 
   .img-icon {
@@ -1166,8 +1158,6 @@ footer {
   }
 
   .modal-img {
-    /* width: 40%; PC時の画像の幅  */
-    /* min-width: unset; */
     width: clamp(280px, 50%, 450px);
   }
 
